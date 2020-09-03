@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let sn of snServices; let i = index">
+            <a href="{{sn.link}}" >
+                <!--
+                    (mouseover)="hoverImg = i" (mouseout)="hoverImg = -1"
+                    "hoverImg == i ? sn.image : sn.imageHvr"
+                -->
+            <div class="sn-prev-card" [ngStyle]="{'border-color': sn.color}">
+                    <img [src]="sn.image" width="100%" alt="">
+                    <h3>{{sn.title}}</h3>
+                    <p>{{sn.text}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container med-art" style="margin-top: 150px;">
+    <div class="row d-flex flex-column">
+        <h1> {{ article.title }} </h1>
+        <br>
+        <div class="author d-flex align-items-center">
+            <img height="50" width="auto" class="" src="assets/dhd-logo-one.png" alt="" style="margin-left: -10px;">
+            <div class="author-text d-flex flex-column">
+                <span> {{ article.author }} </span>
+                <span class="date"> {{ article.date }} </span>
+            </div>
+        </div>
+        <br>
+        <div class="article-content" [innerHTML]="article.body">
+        </div>
+    </div>
+</div>

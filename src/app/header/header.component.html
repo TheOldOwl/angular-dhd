@@ -1,0 +1,60 @@
+<div [ngClass]="{'bg-dhd':!navigationSelect, 'dhd-sec-page': navigationSelect}">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container dhd-bg">
+            <div class="logo-wrapper" [ngClass]="{'logo-wrapper-scroll': reduceNav}">
+                <a class="navbar-brand" href="#" style="margin-left: -10px;">
+                    <img class="logo-img" [src]="!navigationSelect ? 'assets/dhd-logo.png' : 'assets/dhd-logo-blue.png'" alt="DHD Logo">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item dropdown" *ngFor="let menu of menuItems; let i = index">
+                        <a [ngClass]="{'dropdown-toggle': menu.subitems.length > 0}" class="nav-link active"
+                            routerLink="{{menu.page}}" id="navbarDropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false" >
+                            {{menu.item}}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            *ngIf="menu.subitems.length > 0">
+                            <a *ngFor="let submenuItem of menu.subitems" class="dropdown-item" href="/servicenow">{{submenuItem}}</a>
+                        </div>
+    
+                    </li> -->
+                    <li *ngFor="let menu of menuItems" class="nav-item dropdown">
+                        <a mat-button [ngClass]="{'dropdown-toggle': menu.subitems.length > 0}" routerLink="{{menu.page}}" routerLinkActive="active" (click)="onSelectedRoute(id, menu.page)">
+                            {{menu.item}} </a>
+    
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" *ngIf="menu.subitems.length > 0">
+                            <button mat-button *ngFor="let submenuItem of menu.subitems; let id = index"
+                                class="dropdown-item" routerLink="{{menu.page}}" (click)="onSelectedRoute(id, menu.page)" >{{submenuItem}}</button>
+                        </div>
+                    </li>
+                </ul>
+                <!--
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                -->
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div [ngClass]="{'bg-dhd-secondary': navigationSelect}" *ngIf="navigationSelect">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 dhd-section-title">
+                <h1>{{ displayPage }}</h1>
+                <span></span>
+                <h4>We are here to help you deliver services that increase productivity and achieve new insights by developing innovative solution.</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix" *ngIf="!navigationSelect"></div>

@@ -1,0 +1,97 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+
+@mixin mat-ripple-theme($theme) {
+  .mat-ripple-element {
+    background-color: rgba(108, 179, 63, .4);
+    background-color: rgba(var(--dhd-b-o), .4);
+  }
+}
+// Plus imports for other components in your app.
+$custom-typography: mat-typography-config(
+  $font-family: 'Poppins'
+);
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$dhd-website-project-primary: mat-palette($mat-indigo);
+$dhd-website-project-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$dhd-website-project-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$dhd-website-project-theme: mat-light-theme((
+  color: (
+    primary: $dhd-website-project-primary,
+    accent: $dhd-website-project-accent,
+    warn: $dhd-website-project-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($dhd-website-project-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0;  }
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --dhd-b-o: 20, 61, 102;
+  --dhd-b: #143d66;
+  --dhd-s: #6cb33f;
+}
+
+body{
+  background: rgb(243, 243, 243);
+  letter-spacing: .1rem;
+}
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 14px;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+  background: var(--dhd-b);
+  
+} 
+
+
+button:focus {
+  outline: none;
+}
+
+// .mat-tab-label {
+//   position:relative;
+// }
+// .mat-tab-header, .mat-tab-label-container, .mat-ripple{overflow: inherit !important;}
+// .mat-ink-bar:after {
+//   content: '';
+//   position: absolute;
+//   top: 2px;
+//   right: 0;
+//   left: 0;
+//   margin: 0 auto;
+//   width: 0;
+//   height: 0;
+//   border-top: solid 20px #673ab7;
+//   border-left: solid 20px transparent;
+//   border-right: solid 20px transparent;
+// }

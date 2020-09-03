@@ -1,0 +1,16 @@
+<div class="row article-preview d-flex" (click)="onSelected()" routerLink="{{article.id}}">
+    <div class="col-md-12 col-lg-4 article-image" [ngStyle]="{'background-image': 'url(' + article.image + ')'}">
+        <img class="img-fluid d-block d-sm-none" [src]="article.image" alt="">
+    </div>
+    <div class="col-md-12 col-lg-8 article-content">
+        <h1> {{ article.title }} </h1>
+        <p class="synopsis"> {{ article.synops }} </p>
+        <div class="author d-flex align-items-center">
+            <img height="50" width="auto" class="" src="assets/dhd-logo-one.png" alt="">
+            <div class="author-text d-flex flex-column">
+                <span> {{ article.author }} </span>
+                <span class="date"> {{ article.date }} </span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+.article-preview {
+    background-color: rgb(243, 243, 243);
+    padding: 20px 20px;
+    //border-radius: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: box-shadow 0.3s ease-in-out;
+    color: #444;
+
+    &:hover {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+
+    .article-image {
+        //background: url(/assets/office.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+    .article-content {
+        padding: 0 50px;
+    }
+
+    h1 {
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+
+    .synopsis {
+        color: #767676;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .author {
+        img {
+            margin-left: -10px;
+        }
+        .author-text {
+            font-size: 14px;
+            color: #444444;
+            font-weight: 600;
+            .date {
+                color: #a3abbd;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .article-preview {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .article-image{
+        background-image: none !important;
+    }
+}
