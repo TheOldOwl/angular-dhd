@@ -144,8 +144,13 @@
               "devServerTarget": "dhd-website-project:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "dhd-website-project"
 }

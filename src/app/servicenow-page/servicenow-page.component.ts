@@ -28,7 +28,7 @@ export class ServicenowPageComponent implements OnInit {
       <p>Drive lower call volume using the self-service portal and ServiceNow chatbots </p>
       <p>Deliver a better consumer experience through intuitive omni-channel self-service and transparent, two-way communications </p>`,
       showDetails: false,
-      img: "../../assets/itsm/incident-mng.png"
+      img: "../assets/itsm/incident-mng.png"
 
     },
     {
