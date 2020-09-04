@@ -56,7 +56,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Align with the pace of DevOps using automated change approval policies.</p>
   <p>Reduce risk and improve governance with visual conflict detection and a controlled release management process.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/change-mng.png"
+      img: "assets/itsm/change-mng.png"
     },
     {
       title: "Request Management",
@@ -66,7 +66,7 @@ export class ServicenowPageComponent implements OnInit {
       <p>Improve service quality by removing manual tasks and fulfillment delays with automated workflows and approvals </p>
       <p>Increase end user satisfaction by keeping them informed with status updates and notifications about their requests </p>`,
       showDetails: false,
-      img: "../../assets/itsm/request-mng.png"
+      img: "assets/itsm/request-mng.png"
     },
     {
       title: "Asset and Cost Management",
@@ -79,7 +79,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Reduce asset costs - Lower asset costs and automate asset lifecycle processes to minimize wasted resources.</p>
   <p>Mitigate risk - Enforce asset policies and regulatory requirements to limit risks.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/asset-mng.png"
+      img: "assets/itsm/asset-mng.png"
     },
     {
       title: "Knowledge Management*",
@@ -90,7 +90,7 @@ export class ServicenowPageComponent implements OnInit {
       <p>Promote knowledge sharing - Empower agents to create articles in the context of their work and harvest knowledge from communities. </p>
       <p>Drive continuous improvement - Identify knowledge gaps, curate new content, and track usage, governance, and quality trends.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/knowledge-mng.png"
+      img: "assets/itsm/knowledge-mng.png"
     },
     {
       title: "Configuration Management*",
@@ -105,7 +105,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Trust your CMDB to be a complete and compliant single system of record for business-critical processes</p>
   <p>Visualize complex data to understand impact and risk, make better decisions, and provide better business services</p>`,
       showDetails: false,
-      img: "../../assets/itsm/config-mng.png"
+      img: "assets/itsm/config-mng.png"
     },
     {
       title: "Service Level Management*",
@@ -119,7 +119,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Promote better IT/business partnership through common services expectations and correct services measurement and
       reporting</p>`,
       showDetails: false,
-      img: "../../assets/itsm/sla.png"
+      img: "assets/itsm/sla.png"
     },
     {
       title: "Reports and Dashboards*",
@@ -134,7 +134,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Create custom reports to see data on any ServiceNow application or process using the report designer</p>
   <p>Flexible delivery - schedule automated report runs and email distributions</p>`,
       showDetails: false,
-      img: "../../assets/itsm/reports.png"
+      img: "assets/itsm/reports.png"
     },
     {
       title: "Walk-Up Experience",
@@ -146,7 +146,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Save time via employee online check-in or mobile and live helpdesk updates</p>
   <p>Manage demand with full visibility into inventory levels and service times</p>`,
       showDetails: false,
-      img: "../../assets/itsm/walk-up.png"
+      img: "assets/itsm/walk-up.png"
     },
     {
       title: "Now Mobile",
@@ -157,7 +157,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Enable employee self-service for better experiences and lower costs with Virtual Agent.</p>
   <p>Provide fast, easy access to common tasks across IT, HR, facilities, finance, and legal from one location.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/placeholder.png"
+      img: "assets/itsm/placeholder.png"
     },
     {
       title: "Mobile Agent ",
@@ -168,7 +168,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Take advantage of mobile device hardware to get work done easier.</p>
   <p>Keep KPIs at your fingertips with real-time mobile dashboards.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/placeholder.png"
+      img: "assets/itsm/placeholder.png"
     },
     {
       title: "Surveys and Assessments*",
@@ -181,7 +181,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Deliver a consistent experience with all services, surveys, and assessments built on the Now Platform</p>
   <p>Administer surveys easily via email clients and chat interfaces</p>`,
       showDetails: false,
-      img: "../../assets/itsm/survey.png"
+      img: "assets/itsm/survey.png"
     },
     {
       title: "Agent Workspace",
@@ -192,7 +192,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Resolve issues faster with automated suggestions based on machine learning.</p>
   <p>Keep agents informed of all updates related to an issue with a live activity feed.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/placeholder.png"
+      img: "assets/itsm/placeholder.png"
     }
   ]
 
@@ -215,7 +215,7 @@ export class ServicenowPageComponent implements OnInit {
       algorithm assigns a ticket to the wrong category and this is corrected by a human, it learns from the mistake and
       changes its behaviour for next time.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/placeholder.png"
+      img: "assets/itsm/placeholder.png"
     },
     {
       title: "Virtual Agent",
@@ -236,7 +236,7 @@ export class ServicenowPageComponent implements OnInit {
       Virtual Agent available on iOS and Android, and collaboration tools like Slack and Microsoft Teams – which is easy
       to do via our custom scripting tool.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/virtual-agent.png"
+      img: "assets/itsm/virtual-agent.png"
     },
     {
       title: "Performance Analytics",
@@ -257,7 +257,7 @@ export class ServicenowPageComponent implements OnInit {
       business goals. Performance Analytics provides the foundation on which to drive continuous improvement in IT service
       delivery. </p>`,
       showDetails: false,
-      img: "../../assets/itsm/perform.png"
+      img: "assets/itsm/perform.png"
     },
     {
       title: "Continual Improvement",
@@ -267,7 +267,7 @@ export class ServicenowPageComponent implements OnInit {
       <h3>How does it work?  </h3>
       <p>Continual Improvement Management helps embed the concept of rolling improvements into your everyday business activity. It pulls together data on all your improvement initiatives into a single view, so you can see the current status, time to completion and resource allocated. Initiatives are ranked based on ROI and effort, so you can validate budget and resource decisions. Also, if business goals change, it’s easy to reallocate and reprioritize improvements via the drag-and-drop interface. You can track how initiatives are delivering against expected business outcomes. For example, you can see how your ‘Mean Time to Resolution’ KPI is contributing to the business goal of raising employee productivity. Continual Improvement Management also includes a ‘virtual coach’ for service agents, which sends best-practice tips, videos and guidelines during critical moments. It then follows up with more guidance to build their confidence and skills over time. </p>`,
       showDetails: false,
-      img: "../../assets/itsm/improve.png"
+      img: "assets/itsm/improve.png"
     },
     {
       title: "Service Owner Workspace",
@@ -278,7 +278,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Enable faster service restoration by analyzing changes and trends.</p>
   <p>Manage costs by identifying service offerings with unexpectedly high spend.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/placeholder.png"
+      img: "assets/itsm/placeholder.png"
     },
     {
       title: "Vendor Manager Workspace",
@@ -289,7 +289,7 @@ export class ServicenowPageComponent implements OnInit {
   <p>Track performance automatically with real-time operational data captured with the Now Platform®.</p>
   <p>Remove the guesswork around assessing performance with integrated, standardized metrics.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/placeholder.png"
+      img: "assets/itsm/placeholder.png"
     }
   ]
 
