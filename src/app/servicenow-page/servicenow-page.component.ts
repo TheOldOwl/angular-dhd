@@ -28,7 +28,7 @@ export class ServicenowPageComponent implements OnInit {
       <p>Drive lower call volume using the self-service portal and ServiceNow chatbots </p>
       <p>Deliver a better consumer experience through intuitive omni-channel self-service and transparent, two-way communications </p>`,
       showDetails: false,
-      img: "../assets/itsm/incident-mng.png"
+      img: "assets/itsm/incident-mng.png"
 
     },
     {
@@ -40,7 +40,7 @@ export class ServicenowPageComponent implements OnInit {
       <p>Speed up service restoration by creating immediate visibility into known errors and workarounds for all IT staff to use.</p>
       <p>Accelerate root cause resolution with structured problem analysis and by correlating problems and coordinating workflows.</p>`,
       showDetails: false,
-      img: "../../assets/itsm/problem-mng.png"
+      img: "assets/itsm/problem-mng.png"
     },
     {
       title: "Change and Release Management",
